@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecológicos Almanatur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="tienda-ecologica-madrid-logo.png" alt="Logo">
+    </header>
+    <h1>Formulario Contacto Ecológicos Almanatur</h1>
+
+    <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p><label for="nombre">Nombre: <input type="text" name="Nombre" placeholder="Nombre"></label></p>
+            <p><label>Apellidos: <input type="text" name="apellidos" maxlength="16" minlength="3" size="18"></label></p>
+            <label>Sexo: Hombre <input type="radio" name="sexo" value="h">
+                 Mujer <input type="radio" name="sexo" value="m">
+                 No contesta <input type="radio" name="sexo" value="x">
+        <p><label>Fecha de Nacimiento: <input type="date" name="nacimiento"></label></p>
+            <p><label>Contraseña: <input type="password"></label></p>
+            <p><label>Edad <input type="number" min="16" max="65" placeholder="16-65"></label></p>
+            <p><label>URL <input type="url" name="url" placeholder="https://www.linkedin.es"></label></p>
+            <p><label>E-mail: <input type="email"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Documentación</legend>
+            <p><label>Localidad:
+            <select id="Localidad">
+            <optgroup label="Madrid">
+                <option value="Madrid">Madrid</option>
+            </optgroup>
+            <optgroup label="Toledo">
+                <option value="Illescas">Illescas</option>
+                <option value="Ugena">Ugena</option>
+            <p></optgroup></p>
+            </fieldset>
+
+        <label>Capacidad USB:
+                <input list="listaUsb" name="memoria" /></label>
+                <datalist id="listaUsb">
+            <option value="8Gb">
+            <option value="16Gb">
+            <option value="32Gb">
+            <option value="64Gb">
+        </datalist>
+                <p><label><input type="checkbox" value="aceptar" name="condiciones" checked="checked">Acepto condiciones</label></p>
+                <p><textarea name="area" cols="40" rows="4" minlength="30" maxlength="500">Tu opinión nos importa:</textarea></p>
+                <p><label><input type="reset" value="reset"></label></p>
+                <p><label><input type="submit" value="Enviar"></label></p>
+    </form>
+</body>
+
+</html>
